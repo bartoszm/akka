@@ -175,7 +175,7 @@ class Source[+Out, +Mat](delegate: scaladsl.Source[Out, Mat]) extends Graph[Sour
   override def shape: SourceShape[Out] = delegate.shape
   private[stream] def module: StreamLayout.Module = delegate.module
 
-  /** Converts this Java DSL element to it's Scala DSL counterpart. */
+  /** Converts this Java DSL element to its Scala DSL counterpart. */
   def asScala: scaladsl.Source[Out, Mat] = delegate
 
   /**

@@ -9,7 +9,7 @@ import akka.stream.scaladsl
  * Strategy that defines how a stream of streams should be flattened into a stream of simple elements.
  */
 abstract class FlattenStrategy[-T, U] {
-  /** Converts this Java DSL element to it's Scala DSL counterpart. */
+  /** Converts this Java DSL element to its Scala DSL counterpart. */
   def asScala[S]: scaladsl.FlattenStrategy[S, U]
 
 }

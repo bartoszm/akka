@@ -43,7 +43,7 @@ class Flow[-In, +Out, +Mat](delegate: scaladsl.Flow[In, Out, Mat]) extends Graph
   override def shape: FlowShape[In, Out] = delegate.shape
   private[stream] def module: StreamLayout.Module = delegate.module
 
-  /** Converts this Flow to it's Scala DSL counterpart */
+  /** Converts this Flow to its Scala DSL counterpart */
   def asScala: scaladsl.Flow[In, Out, Mat] = delegate
 
   /**
